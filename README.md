@@ -6,8 +6,8 @@ This project is a Python-based agent that leverages OpenAI's GPT-3.5-Turbo model
 
 - `Interactive Dialog:` The agent responds to user queries about the weather, running through a thought-action-pause-observation loop.
 - `Weather Fetching:` The agent uses an external API (WeatherAPI) to fetch real-time weather data for a given city.
-- `OpenAI GPT Integration: The agent leverages OpenAI's GPT-4 model to process user queries and generate intelligent responses.
-- `Customizable: The agent's behavior and available actions can be easily modified and extended.
+- `OpenAI GPT Integration`: The agent leverages OpenAI's GPT-3.5-Turbo model to process user queries and generate intelligent responses.
+- `Customizable`: The agent's behavior and available actions can be easily modified and extended.
 
 ## Setup
 
@@ -58,8 +58,6 @@ The script prompts for the maximum number of interactions (turns) before exiting
 
 The agent will output the current weather in the specified city.
 
-#### Example Interaction
-
 ```bash
 Enter the maximum number of turns: 20
 You: What is the weather like in Istanbul today?
@@ -67,6 +65,6 @@ Thought: I need to find the current weather report for Istanbul to answer the qu
 Action: get_weather: Istanbul  
 PAUSE
  -- running get_weather Istanbul  
-Observation: The weather in Istanbul   is 4.4°C with Partly cloudy.
+Observation: The weather in Istanbul is 4.4°C with Partly cloudy.
 Answer: The weather in Istanbul today is 4.4°C with partly cloudy skies.
 ```
